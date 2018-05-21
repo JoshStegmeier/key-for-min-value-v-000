@@ -4,6 +4,7 @@
 def key_for_min_value(name_hash)
   bestVal = false
   bestName = false
+  binding.pry
 
   if name_hash == nil
     return nil
