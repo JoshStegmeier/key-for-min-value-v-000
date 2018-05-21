@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   bestName = false
 
   if name_hash == false
-    return nil
+    bestName = nil
   else
     name_hash.collect do |name, value|
       if bestVal == false
