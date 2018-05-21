@@ -13,4 +13,5 @@ def key_for_min_value(name_hash)
       bestName = name
     end
   end
+  bestName
 end
