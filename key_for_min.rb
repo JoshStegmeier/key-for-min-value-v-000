@@ -5,14 +5,18 @@ def key_for_min_value(name_hash)
   bestVal = false
   bestName = false
 
-  name_hash.collect do |name, value|
-    if bestVal == false
-      bestVal = value
-      bestName = name
-    elsif value < bestVal
-      bestVal = value
-      bestName = name
+  if name_hash == false
+    return nil
+  else
+    name_hash.collect do |name, value|
+      if bestVal == false
+        bestVal = value
+        bestName = name
+      elsif value < bestVal
+        bestVal = value
+        bestName = name
+      end
     end
+    bestName
   end
-  bestName
 end
